@@ -1,0 +1,116 @@
+:root {
+  --sisged-azul: #1c3f60;
+  --sisged-azul-claro: #2d5a87;
+  --sisged-verde: #2f9e44;
+  --sisged-fundo: #f4f6f9;
+}
+
+body {
+  background-color: var(--sisged-fundo);
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* ---------- Topbar ---------- */
+.sisged-topbar {
+  background-color: var(--sisged-azul);
+  min-height: 56px;
+}
+
+/* ---------- Sidebar ---------- */
+.sisged-sidebar {
+  width: 230px;
+  background-color: #ffffff;
+  border-right: 1px solid #e3e6ea;
+  min-height: calc(100vh - 56px);
+}
+
+.sisged-sidebar .nav-link {
+  color: #333;
+  padding: 10px 20px;
+  border-left: 3px solid transparent;
+}
+
+.sisged-sidebar .nav-link:hover {
+  background-color: #eef3f8;
+  border-left-color: var(--sisged-azul-claro);
+}
+
+.sisged-content {
+  min-height: calc(100vh - 56px);
+}
+
+/* ---------- Login ---------- */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--sisged-azul) 0%, var(--sisged-azul-claro) 100%);
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.login-card h1 {
+  font-size: 1.5rem;
+  color: var(--sisged-azul);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.login-card p.subtitulo {
+  text-align: center;
+  color: #777;
+  margin-bottom: 24px;
+  font-size: .9rem;
+}
+
+/* ---------- Cards de painel ---------- */
+.card-resumo {
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 18px 20px;
+}
+.card-resumo .valor { font-size: 1.8rem; font-weight: 700; }
+.card-resumo .rotulo { font-size: .85rem; opacity: .9; }
+
+.bg-cor-1 { background-color: #1c3f60; }
+.bg-cor-2 { background-color: #2f9e44; }
+.bg-cor-3 { background-color: #d9772e; }
+.bg-cor-4 { background-color: #7048a3; }
+
+/* ---------- Tabelas ---------- */
+.table-sisged thead {
+  background-color: var(--sisged-azul);
+  color: #fff;
+}
+
+.badge-status-Agendada { background-color: #2d5a87; }
+.badge-status-Realizada { background-color: #2f9e44; }
+.badge-status-Cancelada { background-color: #b02a37; }
+
+/* ---------- Utilidades ---------- */
+.page-title {
+  color: var(--sisged-azul);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+@media print {
+  .no-print { display: none !important; }
+}
